@@ -9,8 +9,8 @@ Imports System.Runtime.InteropServices
 ' アセンブリ属性の値を確認します。
 
 <Assembly: AssemblyTitle("Cliper")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")> 
+<Assembly: AssemblyDescription("クリック不要のクリップボード履歴ツール")> 
+<Assembly: AssemblyCompany("ルチル")> 
 <Assembly: AssemblyProduct("Cliper")> 
 <Assembly: AssemblyCopyright("Copyright ©  2018")> 
 <Assembly: AssemblyTrademark("")> 

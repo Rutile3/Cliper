@@ -1,5 +1,7 @@
 ﻿Public Class Form1
+
     Dim LastSetText As String
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim Text As String = Clipboard.GetText()
 
@@ -40,12 +42,11 @@
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Dim Text As String = Clipboard.GetText()
 
-        If LastSetText <> Text Then
+        If Text <> LastSetText AndAlso Text <> Nothing Then
             If ClipBoardList.Items.IndexOf(Text) <> -1 Then '重複の除外
                 ClipBoardList.Items.Remove(Text)
             End If
             '履歴がListBoxの描画範囲外に出るなら最初のデータを消す
-            'If ClipBoardList.Items.Count >= 14 Then
             If ClipBoardList.Items.Count >= (ClipBoardList.Size.Height - 4) / 16 Then
                 ClipBoardList.Items.RemoveAt(0)
             End If
@@ -55,14 +56,26 @@
         End If
     End Sub
 
-    Private Sub Copy() Handles CopyToolStripMenuItem.Click, ClipBoardList.SelectedIndexChanged
+    Private Sub Copy(sender As Object, e As EventArgs) Handles CopyToolStripMenuItem.Click, ClipBoardList.SelectedIndexChanged
         Dim Text As String = ClipBoardList.SelectedItem
 
-        Clipboard.SetText(Text)
-        LastSetText = Text
+        Try
+            Clipboard.SetText(Text)
+            LastSetText = Text
+        Catch ex As System.ArgumentNullException
+            Clipboard.SetText(" ")
+            LastSetText = " "
+        End Try
     End Sub
 
-    Private Sub Copy(sender As Object, e As EventArgs) Handles CopyToolStripMenuItem.Click, ClipBoardList.SelectedIndexChanged
-
+    Private Sub ClipBoardList_SizeChanged(sender As Object, e As EventArgs) Handles ClipBoardList.SizeChanged
+        If ClipBoardList.Items.Count > (ClipBoardList.Size.Height - 4) / 16 Then
+            If ClipBoardList.Items.Count > 1 Then
+                If ClipBoardList.SelectedIndex = ClipBoardList.Items.Count - 1 Then
+                    ClipBoardList.SelectedIndex = ClipBoardList.Items.Count - 2
+                End If
+                ClipBoardList.Items.RemoveAt(ClipBoardList.Items.Count - 1)
+            End If
+        End If
     End Sub
 End Class
