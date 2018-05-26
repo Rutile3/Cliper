@@ -130,8 +130,7 @@ Partial Class Form1
         Me.Controls.Add(Me.ClipBoardList)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.MaximumSize = New System.Drawing.Size(215, 300)
-        Me.MinimumSize = New System.Drawing.Size(215, 300)
+        Me.MinimumSize = New System.Drawing.Size(215, 100)
         Me.Name = "Form1"
         Me.Text = "Cliper"
         Me.MenuStrip1.ResumeLayout(False)

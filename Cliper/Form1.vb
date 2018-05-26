@@ -45,7 +45,8 @@
                 ClipBoardList.Items.Remove(Text)
             End If
             '履歴がListBoxの描画範囲外に出るなら最初のデータを消す
-            If ClipBoardList.Items.Count >= 14 Then
+            'If ClipBoardList.Items.Count >= 14 Then
+            If ClipBoardList.Items.Count >= (ClipBoardList.Size.Height - 4) / 16 Then
                 ClipBoardList.Items.RemoveAt(0)
             End If
 
@@ -59,5 +60,9 @@
 
         Clipboard.SetText(Text)
         LastSetText = Text
+    End Sub
+
+    Private Sub Copy(sender As Object, e As EventArgs) Handles CopyToolStripMenuItem.Click, ClipBoardList.SelectedIndexChanged
+
     End Sub
 End Class
