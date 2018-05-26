@@ -26,10 +26,10 @@ Partial Class Form1
         Me.ClipBoardList = New System.Windows.Forms.ListBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CopyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CopyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OtherToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OptionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -67,6 +67,18 @@ Partial Class Form1
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(67, 20)
         Me.FileToolStripMenuItem.Text = "ファイル(&F)"
         '
+        'ExitToolStripMenuItem
+        '
+        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        Me.ExitToolStripMenuItem.ShortcutKeyDisplayString = "Alt + F4"
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.ExitToolStripMenuItem.Text = "終了(&X)"
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(158, 6)
+        '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CopyToolStripMenuItem})
@@ -80,18 +92,6 @@ Partial Class Form1
         Me.CopyToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl + C"
         Me.CopyToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
         Me.CopyToolStripMenuItem.Text = "コピー(&C)"
-        '
-        'ExitToolStripMenuItem
-        '
-        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.ShortcutKeyDisplayString = "Alt + F4"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
-        Me.ExitToolStripMenuItem.Text = "終了(&X)"
-        '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(158, 6)
         '
         'OtherToolStripMenuItem
         '
