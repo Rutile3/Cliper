@@ -38,6 +38,10 @@
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Dim Text As String = Clipboard.GetText()
         If LastSetText <> Text Then
+            If ClipBoardList.Items.IndexOf(Text) <> -1 Then '重複の除外
+                ClipBoardList.Items.Remove(Text)
+            End If
+
             ClipBoardList.Items.Add(Text)
             LastSetText = Text
         End If
