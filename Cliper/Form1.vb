@@ -16,7 +16,9 @@
     End Sub
 
     Private Sub CopyToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CopyToolStripMenuItem.Click
-
+        Dim Text As String = ClipBoardList.SelectedItem
+        Clipboard.SetText(Text)
+        LastSetText = Text
     End Sub
 
     Private Sub OptionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OptionToolStripMenuItem.Click
