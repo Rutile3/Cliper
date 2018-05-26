@@ -48,7 +48,7 @@ Partial Class Form1
         Me.ClipBoardList.ItemHeight = 16
         Me.ClipBoardList.Location = New System.Drawing.Point(0, 27)
         Me.ClipBoardList.Name = "ClipBoardList"
-        Me.ClipBoardList.Size = New System.Drawing.Size(199, 228)
+        Me.ClipBoardList.Size = New System.Drawing.Size(199, 260)
         Me.ClipBoardList.TabIndex = 0
         '
         'MenuStrip1
@@ -126,11 +126,11 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(199, 261)
+        Me.ClientSize = New System.Drawing.Size(199, 286)
         Me.Controls.Add(Me.ClipBoardList)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.MinimumSize = New System.Drawing.Size(215, 100)
+        Me.MinimumSize = New System.Drawing.Size(215, 1)
         Me.Name = "Form1"
         Me.Text = "Cliper"
         Me.MenuStrip1.ResumeLayout(False)

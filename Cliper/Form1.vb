@@ -12,6 +12,7 @@
 
         ClipBoardList.Items.Add(Text)
         LastSetText = Text
+        ClipBoardList.SelectedIndex = 0
     End Sub
 
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
