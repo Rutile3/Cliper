@@ -44,6 +44,10 @@
             If ClipBoardList.Items.IndexOf(Text) <> -1 Then '重複の除外
                 ClipBoardList.Items.Remove(Text)
             End If
+            '履歴がListBoxの描画範囲外に出るなら最初のデータを消す
+            If ClipBoardList.Items.Count >= 14 Then
+                ClipBoardList.Items.RemoveAt(0)
+            End If
 
             ClipBoardList.Items.Add(Text)
             LastSetText = Text
