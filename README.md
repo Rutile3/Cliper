@@ -1,4 +1,8 @@
 # Cliper
-
-## 概要
 クリック不要のクリップボード履歴ツール
+
+##詳しい説明
+https://scrapbox.io/RutileProgramming/Cliper%EF%BC%88VB%EF%BC%89
+
+##ダウンロード
+https://www.dropbox.com/sh/970ai7f4thv6dbz/AACsnFMnrnjPSP8vypZg668La?dl=0
