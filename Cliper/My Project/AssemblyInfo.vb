@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("クリック不要のクリップボード履歴ツール")> 
 <Assembly: AssemblyCompany("ルチル")> 
 <Assembly: AssemblyProduct("Cliper")> 
-<Assembly: AssemblyCopyright("Copyright ©  2018")> 
+<Assembly: AssemblyCopyright("Copyright ©  2018 Rutile3")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
