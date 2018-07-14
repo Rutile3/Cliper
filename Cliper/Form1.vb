@@ -15,22 +15,6 @@
         ClipBoardList.SelectedIndex = 0
     End Sub
 
-    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
-        Me.Close()
-    End Sub
-
-    Private Sub OptionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OptionToolStripMenuItem.Click
-
-    End Sub
-
-    Private Sub HelpToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HelpToolStripMenuItem.Click
-
-    End Sub
-
-    Private Sub VersionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VersionToolStripMenuItem.Click
-
-    End Sub
-
     Private Sub ClipBoardList_MouseMove(sender As Object, e As MouseEventArgs) Handles ClipBoardList.MouseMove
         Dim Index As Integer = (e.Y - 7) / 16 '本当にクライアントか？
 
@@ -57,7 +41,7 @@
         End If
     End Sub
 
-    Private Sub Copy(sender As Object, e As EventArgs) Handles CopyToolStripMenuItem.Click, ClipBoardList.SelectedIndexChanged
+    Private Sub Copy(sender As Object, e As EventArgs) Handles ClipBoardList.SelectedIndexChanged
         Dim Text As String = ClipBoardList.SelectedItem
 
         Try
