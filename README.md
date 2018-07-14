@@ -5,4 +5,4 @@
 https://scrapbox.io/RutileProgramming/Cliper%EF%BC%88VB%EF%BC%89
 
 ## ダウンロード
-https://www.dropbox.com/sh/970ai7f4thv6dbz/AACsnFMnrnjPSP8vypZg668La?dl=0
+https://www.dropbox.com/s/8tfeigbs8ukslfh/Cliper.exe?dl=0
